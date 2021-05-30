@@ -26,7 +26,7 @@ function listItems() {
 // starting tommorrow.
 function empty (){
   basket.length = 0;
-
 }
 empty();
+console.log(`basket is now ${basket}`);
 console.log(`basket is now 'empty'${basket}`);
