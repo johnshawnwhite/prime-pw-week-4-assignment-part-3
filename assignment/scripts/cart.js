@@ -4,7 +4,7 @@ console.log('***** Cart Functions *****');
 let basket = [];
 console.log(basket);
 // checked to make sure array is complete
-function additem() {
+function additem(oranges) {
   var string= 'item';
   basket.push('oranges');
   return (true);
@@ -15,20 +15,18 @@ console.log('Item was added',additem());
 console.log(`Basket is ${basket}`);
 //testing with example
 
+basket.push('apples');
+basket.push('pears');
 function listItems() {
-} for (let i=0; i<=5; i++) {
-  console.log listItems([i]);
+} for (let i=0; i<basket.length; i++) {
+  console.log (basket[i]);
 }
+// Added another item so it wasnt just 2, i think i am having to look
+// through old assignments to often for completion. going to re work first weeks stuff
+// starting tommorrow.
+function empty (){
+  basket.length = 0;
 
-
-function empty(){
-  return true;
 }
-
-
-console.log('add items to basket');
-for (let i=0; i<6; i++) {
-  console.log(i);
-  return ('Adding apples (expect true)',additem('apples'));
-}
-//Line 20 is incorrect** got to fix*
+empty();
+console.log(`basket is now 'empty'${basket}`);
